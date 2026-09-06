@@ -1,4 +1,4 @@
-# About Project
+# 💻 About Project
 
 [Complete Guide | Run this project on your computer](https://github.com/danialafjeh/Run-My-Projects-Locally)
 
@@ -13,6 +13,8 @@ The project combines a server-side rendered Django application with a PostgreSQL
 ## Overview
 
 Mars Explorer is an educational and portfolio-oriented web application that organizes information about Mars into several dedicated sections.
+
+Main goal of this project is learning to work with Redis as caching layer inside a project powered by Django.
 
 The application provides information about:
 
