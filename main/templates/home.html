@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="body" class="home">
+	<div class="header">
+		<div>
+			<div align="center">
+				<h1>WELCOME TO</h1>
+				<h2>RED PLANET</h2>
+			</div>
+			<h3>Explore And Learn Everything About Mars</h3>
+			<ul>
+				<li>
+					<img src="{% static 'images/home01.png' %}" alt="">
+				</li>
+				<li>
+					<img src="{% static 'images/home02.png' %}" alt="">
+				</li>
+				<li>
+					<img src="{% static 'images/home03.jpg' %}" alt="">
+				</li>
+				<li>
+					<img src="{% static 'images/home04.jpg' %}" alt="">
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="body">
+		<div>
+			<h1>ABOUT US</h1>
+			<p>
+				Mars Explorer is your gateway to the Red Planet. Discover a world of vast landscapes, enormous
+				volcanoes, ancient craters, deep canyons, and a thin atmosphere unlike anything found on Earth.
+				Explore Mars and learn about its physical characteristics, atmosphere, climate, seasons, and
+				geography. Discover some of the most remarkable places on the planet, from Olympus Mons, the
+				largest volcano in the Solar System, to Valles Marineris, an enormous canyon system stretching
+				thousands of kilometers across the Martian surface. And a lot more to learn on our website!
+			</p>
+			<br><br>
+		</div>
+	</div>
+	<center>
+		<div class="footer">
+			<div>
+				<ul>
+					<li>
+						<ul>
+							<h1>Explore Mars :</h1>
+							<li>
+								<a href="{% url 'overview' %}"><img src="{% static 'images/overview.png' %}" alt=""></a>
+								<h1>(1) - OVERVIEW</h1>
+								<span>Explore the essential facts and characteristics of Mars.</span>
+								<a href="{% url 'overview' %}" class="more">Explore</a>
+							</li>
+							<li>
+								<a href="{% url 'surface' %}"><img src="{% static 'images/surface.jpg' %}" alt=""></a>
+								<h1>(2) - SURFACE</h1>
+								<span>Discover the landscapes, features, and weather of Mars.</span>
+								<a href="{% url 'surface' %}" class="more">Explore</a>
+							</li>
+							<li>
+								<a href="{% url 'moons' %}"><img src="{% static 'images/moons.jpg' %}" alt=""></a>
+								<h1>(3) - MOONS</h1>
+								<span>Discover Phobos and Deimos, the two moons of Mars.</span>
+								<a href="{% url 'moons' %}" class="more">Explore</a>
+							</li>
+							<li>
+								<a href="{% url 'missions' %}"><img src="{% static 'images/missions.jpg' %}" alt=""></a>
+								<h1>(4) - OPS & MISSIONS</h1>
+								<span>Explore the missions, rovers, and landing sites that have explored
+									Mars.</span>
+								<a href="{% url 'missions' %}" class="more">Explore</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</center>
+</div>
+{% endblock %}

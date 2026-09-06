@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="body">
+	<div class="header">
+		<div>
+			<h1>Overview</h1>
+			<img src="{% static 'images/overview.jpg' %}" alt="">
+			<h2>(1) Meet Our Red Neighbour</h2>
+			<p>{{ mars.description }}</p>
+			<p> <strong>| Mass |</strong><br>
+				The total amount of matter contained within Mars : {{ mars.mass_kg|floatformat:"3e" }} kg<br>
+				<br>
+				<strong>| Radius |</strong><br>
+				The average distance from the center of Mars to its surface : {{ mars.radius_km }} km<br>
+				<br>
+				<strong>| Diameter |</strong><br>
+				The distance across Mars measured through its center : {{ mars.diameter_km }} km<br>
+				<br>
+				<strong>| Gravity |</strong><br>
+				The gravitational acceleration at the surface of Mars : {{ mars.gravity_m_s2 }} m/s²<br>
+				<br>
+				<strong>| Density |</strong><br>
+				The average amount of mass contained within each cubic meter of Mars : {{ mars.density_kg_m3 }} kg/m³<br>
+				<br>
+				<strong>| Distance from Sun |</strong><br>
+				The average distance between Mars and the Sun : {{ mars.distance_from_sun_km }} km<br>
+				<br>
+				<strong>| Rotation Period |</strong><br>
+				The time required for Mars to complete one rotation on its axis : {{ mars.rotation_period_hours }}
+				hours<br>
+				<br>
+				<strong>| Orbital Period |</strong><br>
+				The time required for Mars to complete one orbit around the Sun : {{ mars.orbital_period_days }} days<br>
+				<br>
+				<strong>| Axial Tilt |</strong><br>
+				The angle at which Mars' rotational axis is tilted relative to its orbital plane : {{ mars.axial_tilt_degrees }}°<br>
+				<br>
+			</p>
+			<h2>(2) What Kind Of Atmosphere does it have ?</h2>
+			<p>{{ atmosphere.description }}</p>
+			<p>
+				<strong>| Surface Pressure |</strong><br>
+				{{ atmosphere.surface_pressure_pa}} Pa<br>
+				<br>
+				<strong>| Average Temperature |</strong><br>
+				{{ atmosphere.average_temperature_c }} °C<br>
+				<br>
+				<strong>| composition |</strong><br>
+				{% for gas, percentage in atmosphere.composition.items %}
+				   {{ gas }} : {{ percentage }}%<br>
+			    {% endfor %}<br>
+			    <br>
+			</p>
+		</div>
+	</div>
+</div>
+{% endblock %}

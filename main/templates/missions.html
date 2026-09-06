@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="body">
+	<div class="header">
+		<div>
+			<h1>Operations & Missions</h1>
+			<div class="article">
+				<img src="{% static 'images/martianrover-journey.jpg' %}" alt="">
+				<h1>(1) Missions :</h1>
+				<br><br><br>
+				{% for mission in ops %}
+				   <h1>{{ mission.name }}</h1>
+				   <span>Agency : {{ mission.agency }} | Type : {{ mission.mission_type }} | Status : {{ mission.status }}</span>
+				   <span>Launch : {{ mission.launch_date }} , Arrival : {{ mission.arrival_date }}</span>
+				   <p>{{ mission.description }}</p>
+				{% endfor %}
+				<hr>
+				<br>
+				<h1>(2) Rovers :</h1>
+				<br><br><br>
+				{% for rover in rovers %}
+				   <h1>{{ rover.name }}</h1>
+				   <span>Mission : {{ rover.mission.name }} | Status : {{ rover.current_status }}</span>
+				   <span>Landing Site : {{ rover.landing_site }} , Landing Date : {{ rover.landing_date }}</span>
+				   <p>{{ rover.description }}</p>
+				{% endfor %}
+				<hr>
+				<br>
+				<h1>(3) Landing Sites :</h1>
+				<br><br><br>
+				{% for site in sites %}
+				   <h1>{{ site.name }}</h1>
+				   <span>latitude : {{ site.latitude }}° | longitude : {{ site.longitude }}°</span>
+				   <span>Region : {{ site.region }}</span>
+				   <p>{{ site.description }}</p>
+				{% endfor %}
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li>
+						<h1>GALLERY :</h1>
+						<img src="{% static 'images/ops1.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops2.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops3.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops4.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops5.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops6.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops7.png' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops8.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops9.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops10.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops11.png' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops12.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops13.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops14.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops15.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops16.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops17.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops18.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops19.jpg' %}" alt="">
+					</li>
+					<li>
+						<img src="{% static 'images/ops20.jpg' %}" alt="">
+					</li>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

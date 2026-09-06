@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="body">
+	<div class="header">
+		<div>
+			<h1>Moons</h1>
+			<ul>
+				<li>
+					<a href="#"><img src="{% static 'images/phobos.png' %}" alt=""></a>
+					<div>
+						<h1>(1) PHOBOS</h1>
+						<p>{{ phobos.description }}</p>
+						
+					</div>
+					<P>
+						| <strong>Radius :</strong> {{ phobos.radius_km }} km |
+						<strong>Mass :</strong> {{ phobos.mass_kg|floatformat:"3e" }} kg |
+						<strong>Orbital Period :</strong> {{ phobos.orbital_period_days }} days |
+					</P>
+				</li>
+				<li>
+					<a href="#"><img src="{% static 'images/deimos.jpg' %}" alt=""></a>
+					<div>
+						<h1>(2) DEIMOS</h1>
+						<p>{{ deimos.description }}</p>
+					</div>
+					<P>
+						| <strong>Radius :</strong> {{ deimos.radius_km }} km |
+						<strong>Mass :</strong> {{ deimos.mass_kg|floatformat:"3e" }} kg |
+						<strong>Orbital Period :</strong> {{ deimos.orbital_period_days }} days |
+					</P>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock %}

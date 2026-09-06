@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="body" class="about">
+	<div class="header">
+		<div>
+			<h1>Surface</h1>
+			<h2>Learn about the weather and geographic features</h2>
+			<p>Explore the surface of Mars through detailed information about its major geographic features and
+				atmospheric weather conditions. This section provides data on notable regions and formations across the
+				Martian surface, alongside recorded weather conditions.</p>
+		</div>
+	</div>
+	<div class="body">
+		<div>
+			<h2>(1) Atmospheric weather conditions :</h2>
+		</div>
+		{% for weather in weather %}
+		<div>
+			<h2>{{ weather.hemisphere }} | {{ weather.season }}</h2>
+			<p>min temperature : {{ weather.min_temperature_c }}°C , max temperature : {{ weather.max_temperature_c }}°C , average temperature : {{ weather.average_temperature_c }}°C</p>
+			<p>{{ weather.description }}</p>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="footer">
+		<div>
+			<h2>(2) Geographic Features :</h2>
+		</div>
+		{% for geo in geographics %}
+		<div>
+			<h2>{{ geo.name }}</h2>
+			<p>Type : {{ geo.feature_type }} | latitude : {{ geo.latitude }}° | longitude : {{ geo.longitude }}°</p>
+			<p>Elevation : {{ geo.elevation_m }} m | Diameter : {{ geo.diameter_km }} km </p>
+			<p>{{ geo.description }}</p>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+{% endblock %}

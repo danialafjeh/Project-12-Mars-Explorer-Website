@@ -1,0 +1,542 @@
+[
+{
+  "model": "main.mars",
+  "pk": 1,
+  "fields": {
+    "name": "Mars",
+    "mass_kg": 6.4171e+23,
+    "radius_km": 3389.5,
+    "diameter_km": 6779.0,
+    "gravity_m_s2": 2.71,
+    "density_kg_m3": 3933.0,
+    "distance_from_sun_km": 227700000.0,
+    "rotation_period_hours": 24.62,
+    "orbital_period_days": 687.0,
+    "axial_tilt_degrees": 25.19,
+    "description": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System. Often called the Red Planet due to iron oxide on its surface, Mars is a cold desert world with a thin atmosphere composed primarily of carbon dioxide. The planet has seasons, polar ice caps, giant volcanoes, vast canyons, and evidence that liquid water once flowed across its surface.\r\nMars has a day length very similar to Earth, lasting approximately 24.6 hours, but its year is much longer at 687 Earth days. Scientists consider Mars one of the most important targets in planetary exploration because it may preserve clues about the history of water, climate evolution, and the possibility of ancient microbial life.\r\nNASA has explored Mars with orbiters, landers, and rovers including Viking, Spirit, Opportunity, Curiosity, Perseverance, and Ingenuity."
+  }
+},
+{
+  "model": "main.atmosphere",
+  "pk": 1,
+  "fields": {
+    "mars": 1,
+    "surface_pressure_pa": 610.0,
+    "average_temperature_c": -63.0,
+    "composition": {
+      "argon": 1.6,
+      "oxygen": 0.13,
+      "nitrogen": 2.7,
+      "carbon_dioxide": 95.3,
+      "carbon_monoxide": 0.08
+    },
+    "description": "Mars has a very thin atmosphere composed primarily of carbon dioxide,\r\nwith smaller amounts of nitrogen and argon. The atmospheric pressure\r\nat the surface is less than one percent of Earth's average surface\r\npressure.\r\nThe thin atmosphere is unable to retain heat effectively, contributing\r\nto the cold conditions on the Martian surface. NASA reports an average\r\nsurface temperature of approximately -63 degrees Celsius, although\r\ntemperatures vary significantly depending on location, season, and\r\ntime of day.\r\nMars also experiences winds, dust devils, and local, regional, and\r\nglobal dust storms. Seasonal changes in the atmosphere are partly\r\nassociated with the exchange of carbon dioxide between the atmosphere\r\nand the polar ice caps. As carbon dioxide freezes and sublimates at\r\nthe poles, the total mass and surface pressure of the atmosphere\r\nchange over the course of a Martian year."
+  }
+},
+{
+  "model": "main.weather",
+  "pk": 1,
+  "fields": {
+    "mars": 1,
+    "hemisphere": "northern",
+    "season": "spring",
+    "min_temperature_c": -90.0,
+    "max_temperature_c": 10.0,
+    "average_temperature_c": -50.0,
+    "description": "Spring in the northern hemisphere of Mars brings gradually increasing temperatures as the region moves away from winter. Seasonal warming affects the polar ice caps and atmospheric circulation, while temperatures remain far below those experienced on Earth."
+  }
+},
+{
+  "model": "main.weather",
+  "pk": 2,
+  "fields": {
+    "mars": 1,
+    "hemisphere": "northern",
+    "season": "summer",
+    "min_temperature_c": -80.0,
+    "max_temperature_c": 25.0,
+    "average_temperature_c": -20.0,
+    "description": "Northern summer is one of the warmer periods in the Martian year. During daytime, temperatures near the equator can occasionally rise above the freezing point, although temperatures drop dramatically after sunset because of the planet's thin atmosphere."
+  }
+},
+{
+  "model": "main.weather",
+  "pk": 3,
+  "fields": {
+    "mars": 1,
+    "hemisphere": "northern",
+    "season": "autumn",
+    "min_temperature_c": -100.0,
+    "max_temperature_c": 10.0,
+    "average_temperature_c": -55.0,
+    "description": "During northern autumn, temperatures gradually decrease as the hemisphere moves toward winter. Carbon dioxide begins to condense at the northern polar region, contributing to seasonal changes in atmospheric pressure."
+  }
+},
+{
+  "model": "main.weather",
+  "pk": 4,
+  "fields": {
+    "mars": 1,
+    "hemisphere": "northern",
+    "season": "winter",
+    "min_temperature_c": -125.0,
+    "max_temperature_c": -20.0,
+    "average_temperature_c": -70.0,
+    "description": "Northern winter is characterized by extremely cold conditions, particularly near the polar region. Carbon dioxide freezes onto the northern polar cap, causing a seasonal decrease in atmospheric pressure. Temperatures can fall well below -100 degrees Celsius."
+  }
+},
+{
+  "model": "main.weather",
+  "pk": 5,
+  "fields": {
+    "mars": 1,
+    "hemisphere": "southern",
+    "season": "spring",
+    "min_temperature_c": -100.0,
+    "max_temperature_c": 15.0,
+    "average_temperature_c": -50.0,
+    "description": "Southern spring follows the cold Martian winter and brings increasing solar heating. The seasonal sublimation of carbon dioxide from the southern polar cap contributes to an increase in atmospheric pressure and can intensify atmospheric circulation."
+  }
+},
+{
+  "model": "main.weather",
+  "pk": 6,
+  "fields": {
+    "mars": 1,
+    "hemisphere": "southern",
+    "season": "summer",
+    "min_temperature_c": -85.0,
+    "max_temperature_c": 30.0,
+    "average_temperature_c": -25.0,
+    "description": "Southern summer is generally warmer than southern winter and can produce significant atmospheric activity. Mars is closest to the Sun during southern summer because of its elliptical orbit, contributing to stronger seasonal contrasts and increased dust activity."
+  }
+},
+{
+  "model": "main.weather",
+  "pk": 7,
+  "fields": {
+    "mars": 1,
+    "hemisphere": "southern",
+    "season": "autumn",
+    "min_temperature_c": -105.0,
+    "max_temperature_c": 3.0,
+    "average_temperature_c": -55.0,
+    "description": "Southern autumn marks the transition toward the cold Martian winter. Temperatures progressively decrease and carbon dioxide begins accumulating on the southern polar cap as atmospheric conditions change."
+  }
+},
+{
+  "model": "main.weather",
+  "pk": 8,
+  "fields": {
+    "mars": 1,
+    "hemisphere": "southern",
+    "season": "winter",
+    "min_temperature_c": -128.0,
+    "max_temperature_c": -25.0,
+    "average_temperature_c": -75.0,
+    "description": "Southern winter is one of the coldest periods on Mars. Large amounts of carbon dioxide freeze onto the southern polar cap, causing seasonal changes in atmospheric pressure. The southern winter can also be associated with strong atmospheric circulation and dust activity."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 1,
+  "fields": {
+    "mars": 1,
+    "name": "Olympus Mons",
+    "feature_type": "volcano",
+    "latitude": 18.4,
+    "longitude": 226.0,
+    "elevation_m": 27000.0,
+    "diameter_km": 648.0,
+    "description": "Olympus Mons is the largest volcano and the tallest known mountain in the Solar System. It rises approximately 27 kilometers above the surrounding plains and spans more than 600 kilometers across its base. It is a giant shield volcano formed by extensive volcanic activity on Mars."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 2,
+  "fields": {
+    "mars": 1,
+    "name": "Ascraeus Mons",
+    "feature_type": "volcano",
+    "latitude": 11.9,
+    "longitude": 255.5,
+    "elevation_m": 18000.0,
+    "diameter_km": 480.0,
+    "description": "Ascraeus Mons is the northernmost and highest of the three major Tharsis Montes volcanoes. It is a massive shield volcano formed by repeated lava flows over a long period of Martian geological history."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 3,
+  "fields": {
+    "mars": 1,
+    "name": "Pavonis Mons",
+    "feature_type": "volcano",
+    "latitude": 1.48,
+    "longitude": 247.04,
+    "elevation_m": 14000.0,
+    "diameter_km": 366.53,
+    "description": "Pavonis Mons is the central volcano of the Tharsis Montes. It is a large shield volcano located near the Martian equator and contains a broad summit depression formed by volcanic processes."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 4,
+  "fields": {
+    "mars": 1,
+    "name": "Arsia Mons",
+    "feature_type": "volcano",
+    "latitude": -9.0,
+    "longitude": 239.0,
+    "elevation_m": 18000.0,
+    "diameter_km": 435.0,
+    "description": "Arsia Mons is the southernmost of the three Tharsis Montes volcanoes. It is a massive shield volcano with extensive lava flows and a large summit caldera created by repeated volcanic activity."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 5,
+  "fields": {
+    "mars": 1,
+    "name": "Elysium Mons",
+    "feature_type": "volcano",
+    "latitude": 25.0,
+    "longitude": 147.0,
+    "elevation_m": 12500.0,
+    "diameter_km": 240.0,
+    "description": "Elysium Mons is a large shield volcano located in the Elysium volcanic region of Mars. It rises approximately 12.5 kilometers above the surrounding plains and is one of the largest volcanic structures outside the Tharsis region."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 6,
+  "fields": {
+    "mars": 1,
+    "name": "Valles Marineris",
+    "feature_type": "canyon",
+    "latitude": -14.0,
+    "longitude": 300.0,
+    "elevation_m": 0.0,
+    "diameter_km": 4000.0,
+    "description": "Valles Marineris is the largest canyon system in the Solar System. It stretches for approximately 4,000 kilometers across the Martian surface and reaches depths of several kilometers. The canyon system formed primarily through tectonic processes and was later modified by erosion and other geological activity."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 7,
+  "fields": {
+    "mars": 1,
+    "name": "Hellas Planitia",
+    "feature_type": "crater",
+    "latitude": -42.7,
+    "longitude": 70.0,
+    "elevation_m": -7152.0,
+    "diameter_km": 2300.0,
+    "description": "Hellas Planitia is one of the largest impact basins in the Solar System. It occupies a vast depression in the southern hemisphere of Mars and was created by a massive impact early in the planet's geological history."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 8,
+  "fields": {
+    "mars": 1,
+    "name": "Jezero Crater",
+    "feature_type": "crater",
+    "latitude": 18.44,
+    "longitude": 77.45,
+    "elevation_m": -2600.0,
+    "diameter_km": 49.0,
+    "description": "Jezero Crater is an ancient impact crater that once contained a lake fed by river systems. Its preserved delta and sedimentary deposits make it an important location for studying ancient Martian environments and searching for evidence of past microbial life."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 9,
+  "fields": {
+    "mars": 1,
+    "name": "Utopia Planitia",
+    "feature_type": "plain",
+    "latitude": 46.7,
+    "longitude": 118.0,
+    "elevation_m": -4500.0,
+    "diameter_km": 3300.0,
+    "description": "Utopia Planitia is a vast plain in the northern hemisphere of Mars. It forms part of one of the planet's largest impact basins and contains extensive deposits of water ice beneath the surface."
+  }
+},
+{
+  "model": "main.geographicfeature",
+  "pk": 10,
+  "fields": {
+    "mars": 1,
+    "name": "Elysium Planitia",
+    "feature_type": "plain",
+    "latitude": 4.0,
+    "longitude": 154.0,
+    "elevation_m": -3000.0,
+    "diameter_km": 2500.0,
+    "description": "Elysium Planitia is a broad volcanic plain near the Martian equator. The region contains relatively young volcanic surfaces and was selected as the landing site for NASA's InSight mission."
+  }
+},
+{
+  "model": "main.moon",
+  "pk": 1,
+  "fields": {
+    "mars": 1,
+    "name": "Phobos",
+    "radius_km": 11.08,
+    "mass_kg": 1.0659e+16,
+    "orbital_period_days": 0.31891,
+    "description": "Phobos is the larger and innermost moon of Mars. It is an irregular, heavily cratered body measuring approximately 27 by 22 by 18 kilometers. Phobos orbits Mars at an average distance of about 9,377 kilometers and completes an orbit in approximately 7 hours and 39 minutes, meaning it travels around Mars more than three times during a Martian day. Its most prominent surface feature is Stickney Crater, which is about 10 kilometers across. Phobos is gradually spiraling inward because of tidal interactions with Mars and is expected to eventually either collide with Mars or break apart and form a ring around the planet."
+  }
+},
+{
+  "model": "main.moon",
+  "pk": 2,
+  "fields": {
+    "mars": 1,
+    "name": "Deimos",
+    "radius_km": 6.2,
+    "mass_kg": 1.8e+16,
+    "orbital_period_days": 1.26244,
+    "description": "Deimos is the smaller and outermost moon of Mars. It is an irregular, heavily cratered body measuring approximately 15 by 12 by 10 kilometers. Deimos orbits Mars at an average distance of about 23,436 kilometers and completes one orbit in approximately 30 hours. Its surface appears smoother than Phobos because a thick layer of loose dust and regolith partially fills many of its craters. Deimos is tidally locked to Mars, meaning that the same side of the moon always faces the planet. Both Phobos and Deimos may be captured asteroids because their dark, carbon-rich surface materials resemble those of some asteroids."
+  }
+},
+{
+  "model": "main.mission",
+  "pk": 1,
+  "fields": {
+    "mars": 1,
+    "name": "Viking 1",
+    "agency": "NASA",
+    "mission_type": "orbiter",
+    "launch_date": "1975-08-20",
+    "arrival_date": "1976-07-20",
+    "status": "completed",
+    "description": "Viking 1 was the first U.S. mission to successfully land a spacecraft on Mars and return images from the Martian surface. The mission consisted of an orbiter and a lander. Its scientific objectives included imaging the Martian surface, studying the atmosphere and soil, and searching for evidence of life. The Viking 1 lander operated in Chryse Planitia for more than six years."
+  }
+},
+{
+  "model": "main.mission",
+  "pk": 2,
+  "fields": {
+    "mars": 1,
+    "name": "Mars Pathfinder",
+    "agency": "NASA",
+    "mission_type": "lander",
+    "launch_date": "1996-12-04",
+    "arrival_date": "1997-07-04",
+    "status": "completed",
+    "description": "Mars Pathfinder demonstrated a new and highly successful landing technique using airbags and delivered Sojourner, the first rover to operate on another planet. The mission studied the Martian atmosphere, climate, geology, and surface rocks and soil. Pathfinder landed in Ares Vallis on July 4, 1997."
+  }
+},
+{
+  "model": "main.mission",
+  "pk": 3,
+  "fields": {
+    "mars": 1,
+    "name": "Mars Exploration Rover",
+    "agency": "NASA",
+    "mission_type": "rover",
+    "launch_date": "2003-06-10",
+    "arrival_date": "2004-01-03",
+    "status": "completed",
+    "description": "The Mars Exploration Rover mission consisted of two robotic geologists, Spirit and Opportunity, sent to different regions of Mars to investigate the history of water and determine whether conditions on the planet may once have been favorable for life. Spirit landed in Gusev Crater while Opportunity landed at Meridiani Planum. Together they greatly exceeded their original planned lifetimes and made major discoveries about ancient Martian environments."
+  }
+},
+{
+  "model": "main.mission",
+  "pk": 4,
+  "fields": {
+    "mars": 1,
+    "name": "Mars Science Laboratory",
+    "agency": "NASA",
+    "mission_type": "rover",
+    "launch_date": "2011-11-26",
+    "arrival_date": "2012-08-06",
+    "status": "active",
+    "description": "Mars Science Laboratory delivered the Curiosity rover to Gale Crater. The mission was designed to investigate whether Mars ever had environmental conditions capable of supporting microbial life. Curiosity studies Martian rocks, soil, atmosphere, and climate and has found extensive evidence that ancient Mars once had environments capable of supporting microbial life."
+  }
+},
+{
+  "model": "main.mission",
+  "pk": 5,
+  "fields": {
+    "mars": 1,
+    "name": "Mars 2020",
+    "agency": "NASA",
+    "mission_type": "rover",
+    "launch_date": "2020-07-30",
+    "arrival_date": "2021-02-18",
+    "status": "active",
+    "description": "Mars 2020 delivered NASA's Perseverance rover to Jezero Crater. The mission is searching for signs of ancient microbial life, studying the geology and past habitability of Mars, and collecting and caching rock and regolith samples for potential future return to Earth. The mission also carried Ingenuity, which achieved the first powered, controlled flight on another planet."
+  }
+},
+{
+  "model": "main.rover",
+  "pk": 1,
+  "fields": {
+    "mission": 1,
+    "name": "Viking 1 Lander",
+    "landing_date": "1976-07-20",
+    "landing_site": "Chryse Planitia",
+    "current_status": "inactive",
+    "description": "Viking 1 was a stationary lander rather than a mobile rover. It successfully landed on Mars on July 20, 1976, becoming the first U.S. spacecraft to successfully land and operate on the Martian surface. The lander studied the Martian soil, atmosphere, weather, and surface environment and conducted experiments searching for evidence of microbial life."
+  }
+},
+{
+  "model": "main.rover",
+  "pk": 2,
+  "fields": {
+    "mission": 2,
+    "name": "Sojourner",
+    "landing_date": "1997-07-04",
+    "landing_site": "Ares Vallis",
+    "current_status": "inactive",
+    "description": "Sojourner was NASA's first successful wheeled rover to operate on another planet. It was deployed by the Mars Pathfinder lander in Ares Vallis on July 4, 1997. The small solar-powered rover traveled across the Martian surface, examined rocks and soil, and demonstrated technologies for autonomous mobility and robotic exploration on Mars."
+  }
+},
+{
+  "model": "main.rover",
+  "pk": 3,
+  "fields": {
+    "mission": 3,
+    "name": "Spirit",
+    "landing_date": "2004-01-03",
+    "landing_site": "Gusev Crater",
+    "current_status": "inactive",
+    "description": "Spirit was one of NASA's twin Mars Exploration Rovers. It landed in Gusev Crater in January 2004 to investigate the geological history of Mars and search for evidence of past water. Spirit operated for more than six years, far exceeding its original 90-sol mission, and traveled approximately 7.7 kilometers across the Martian surface."
+  }
+},
+{
+  "model": "main.rover",
+  "pk": 4,
+  "fields": {
+    "mission": 4,
+    "name": "Curiosity",
+    "landing_date": "2012-08-06",
+    "landing_site": "Gale Crater",
+    "current_status": "active",
+    "description": "Curiosity is a car-sized NASA rover that has been exploring Gale Crater since August 2012. It was designed to determine whether Mars ever had environmental conditions capable of supporting microbial life. The rover carries a sophisticated suite of scientific instruments, including cameras, a laser spectrometer, and a drill for collecting and analyzing rock samples. Its investigations have provided extensive evidence that ancient Mars once had habitable environments."
+  }
+},
+{
+  "model": "main.rover",
+  "pk": 5,
+  "fields": {
+    "mission": 5,
+    "name": "Perseverance",
+    "landing_date": "2021-02-18",
+    "landing_site": "Jezero Crater",
+    "current_status": "active",
+    "description": "Perseverance is NASA's most advanced Mars rover and has been exploring Jezero Crater since February 2021. Its primary scientific objectives include searching for signs of ancient microbial life, studying the geology and past habitability of Mars, and collecting and caching rock and regolith samples. Perseverance also carried Ingenuity, the first aircraft to achieve powered and controlled flight on another planet."
+  }
+},
+{
+  "model": "main.landingsite",
+  "pk": 1,
+  "fields": {
+    "mars": 1,
+    "name": "Jezero Crater",
+    "latitude": 18.444,
+    "longitude": 77.45,
+    "region": "Isidis Planitia",
+    "description": "Jezero Crater is an ancient impact crater that once contained a lake and a river delta. NASA selected the site as the landing location for the Mars 2020 mission because its preserved delta and sedimentary rocks provide an important record of ancient water activity and may contain evidence of past microbial life. NASA's Perseverance rover landed here on February 18, 2021."
+  }
+},
+{
+  "model": "main.landingsite",
+  "pk": 2,
+  "fields": {
+    "mars": 1,
+    "name": "Gale Crater",
+    "latitude": -4.5895,
+    "longitude": 137.4417,
+    "region": "Aeolis",
+    "description": "Gale Crater is a large impact crater near the Martian equator and the landing site of NASA's Curiosity rover. The crater contains Mount Sharp, a layered geological mound rising from its center. Curiosity has studied the rocks and sediments of Gale Crater to determine whether ancient Mars once had environmental conditions capable of supporting microbial life."
+  }
+},
+{
+  "model": "main.landingsite",
+  "pk": 3,
+  "fields": {
+    "mars": 1,
+    "name": "Gusev Crater",
+    "latitude": -14.5692,
+    "longitude": 175.4729,
+    "region": "Aeolis",
+    "description": "Gusev Crater is a large impact crater that was selected as the landing site for NASA's Spirit rover. Scientists chose the region because geological evidence suggested that water may once have existed there. Spirit landed inside Gusev Crater on January 3, 2004, and explored the surrounding terrain until communications were lost in 2010."
+  }
+},
+{
+  "model": "main.landingsite",
+  "pk": 4,
+  "fields": {
+    "mars": 1,
+    "name": "Meridiani Planum",
+    "latitude": -1.95,
+    "longitude": -5.53,
+    "region": "Meridiani",
+    "description": "Meridiani Planum is a broad plain near the Martian equator and the landing site of NASA's Opportunity rover. The region was selected in part because orbital observations detected the mineral hematite, which can form in association with water. Opportunity landed in January 2004 and subsequently discovered geological evidence that liquid water had once affected the region."
+  }
+},
+{
+  "model": "main.landingsite",
+  "pk": 5,
+  "fields": {
+    "mars": 1,
+    "name": "Ares Vallis",
+    "latitude": 19.13,
+    "longitude": 33.21,
+    "region": "Chryse Planitia",
+    "description": "Ares Vallis is an ancient outflow channel and floodplain in the northern hemisphere of Mars. NASA selected the region as the landing site for Mars Pathfinder because it was considered relatively safe for landing and contained a diverse collection of rocks transported by ancient catastrophic floods. Pathfinder landed on July 4, 1997, and deployed the Sojourner rover."
+  }
+},
+{
+  "model": "main.landingsite",
+  "pk": 6,
+  "fields": {
+    "mars": 1,
+    "name": "Chryse Planitia",
+    "latitude": 22.48,
+    "longitude": -47.97,
+    "region": "Chryse Planitia",
+    "description": "Chryse Planitia is a vast plain in the northern hemisphere of Mars and was the landing region of NASA's Viking 1 lander in 1976. Viking 1 became the first spacecraft to successfully land on Mars and return data from the surface. The region was selected because its relatively smooth terrain offered favorable conditions for a safe landing."
+  }
+},
+{
+  "model": "main.landingsite",
+  "pk": 7,
+  "fields": {
+    "mars": 1,
+    "name": "Utopia Planitia",
+    "latitude": 47.97,
+    "longitude": 225.71,
+    "region": "Utopia Planitia",
+    "description": "Utopia Planitia is a vast plain in the northern hemisphere of Mars and was the landing site of NASA's Viking 2 lander in 1976. Viking 2 successfully landed on September 3, 1976, and conducted extensive experiments and observations of the Martian surface and atmosphere."
+  }
+},
+{
+  "model": "main.landingsite",
+  "pk": 8,
+  "fields": {
+    "mars": 1,
+    "name": "Elysium Planitia",
+    "latitude": 4.5024,
+    "longitude": 135.6234,
+    "region": "Elysium Planitia",
+    "description": "Elysium Planitia is a broad volcanic plain near the equator of Mars and was selected as the landing site for NASA's InSight mission. InSight landed on November 26, 2018, and studied the interior structure of Mars using a seismometer and other scientific instruments. The mission provided important information about Martian seismic activity and the planet's internal structure."
+  }
+},
+{
+  "model": "main.landingsite",
+  "pk": 9,
+  "fields": {
+    "mars": 1,
+    "name": "Green Valley",
+    "latitude": 68.22,
+    "longitude": 234.25,
+    "region": "Vastitas Borealis",
+    "description": "The Phoenix landing site was located in the northern plains of Mars in a region known as Vastitas Borealis. NASA's Phoenix lander touched down on May 25, 2008. The mission used a robotic arm to dig into the Martian soil and confirmed the presence of water ice beneath the surface."
+  }
+}
+]

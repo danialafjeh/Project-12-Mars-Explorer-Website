@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.git
+.gitignore
+venv
+denv
+.env
+Project12Screenshot01.png
+Project12Screenshot02.png
+Project12Screenshot03.png

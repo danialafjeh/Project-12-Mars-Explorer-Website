@@ -1,0 +1,49 @@
+{% load static %}
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mars Explorer</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mobile.css' %}">
+	<script src="{% static 'js/mobile.js' %}" type="text/javascript"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+			<div>
+				<a href="{% url 'home' %}" class="logo"><img src="{% static 'images/navlogo.png' %}" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="{% url 'home' %}">Home</a>
+					</li>
+					<li>
+						<a href="{% url 'overview' %}">Overview</a>
+					</li>
+					<li class="menu">
+						<a href="{% url 'surface' %}">Surface</a>
+					</li>
+					<li class="menu">
+						<a href="{% url 'moons' %}">MOONS</a>
+					</li>
+					<li>
+						<a href="{% url 'missions' %}">OPS</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+        {% block content %}
+
+        {% endblock %}
+        <div id="footer">
+			<div class="footnote">
+				<div>
+					<p>&copy; 2026 This project is built BY Danial Afjeh | ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
