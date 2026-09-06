@@ -1959,6 +1959,10 @@ The repository contains a known initial dataset that can be loaded automatically
 | HTML/CSS/JS      | Frontend                         |
 | Django Templates | Server-side rendering            |
 
+## Frontend Template Attribution
+
+The frontend of this project is based on a pre-designed template from [Free Website Templates](https://www.freewebsitetemplates.com/). The original template was customized and adapted for this project, including modifications to the existing layout and styling, as well as adding and removing sections to meet the project's requirements and overall design.
+
 ---
 
 # Summary
